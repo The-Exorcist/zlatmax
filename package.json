@@ -55,7 +55,7 @@
 		"sass-loader": "latest",
 		"smooth-scroll": "latest",
 		"string-replace-loader": "latest",
-		"style-loader": "latest",
+		"style-loader": "^3.3.1",
 		"swiper": "latest",
 		"terser-webpack-plugin": "latest",
 		"tippy.js": "latest",

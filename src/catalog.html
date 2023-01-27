@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.htm',{ "title":"Каталог" })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.htm',{})
+            <main class="page page__inner">
+                <div class="page__header">
+                    <div class="page__container">
+                        <h1 class="page__title title">Разделочные ножи</h1>
+                        <div class="page__breadcrumbs breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="" class="breadcrumbs__link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__cureent">Разделочные ножи</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="catalog__container">
+                        <div class="catalog__body"">
+                            <div class="catalog__filter filter-catalog">
+                                <button type="button" class="filter-catalog__title">Фильтр товаров</button>
+                                <div data-spollers class="filter-catalog__items">
+                                    <div class="filter-catalog__price price-filter">
+                                        <button type="button" data-spoller class="price-filter__title _icon-arrow-up-spoller">Цена</button>
+                                        <div class="price-filter__body" data-range>
+                                            <div class="price-filter__inputs">
+                                                <input data-range-from="0" value="500" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                                <input data-range-to="5000" value="1000" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                            </div>
+                                            <div class="price-filter__range" data-range-item></div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Производство</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_1" class="checkbox__label"
+                                                    ><span class="checkbox__text">АиР<small>(250)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_2" class="checkbox__label"
+                                                    ><span class="checkbox__text">Булат Сергея Баранова<small>(25)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_3" class="checkbox__label"
+                                                    ><span class="checkbox__text">Булат Умерова<small>(265)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_4" class="checkbox__label"
+                                                    ><span class="checkbox__text">ЗЗОСС<small>(18)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_5" class="checkbox__label"
+                                                    ><span class="checkbox__text">ЗИК<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_6" class="checkbox__label"
+                                                    ><span class="checkbox__text">ЗЛАТКО<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_7" class="checkbox__label"
+                                                    ><span class="checkbox__text">ЗлатПрофит<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_8" class="checkbox__label"
+                                                    ><span class="checkbox__text">ЗОК<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_9" class="checkbox__label"
+                                                    ><span class="checkbox__text">НБК<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_10" class="checkbox__label"
+                                                    ><span class="checkbox__text">НИКОН<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_11" class="checkbox__label"
+                                                    ><span class="checkbox__text">Оружейник<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_12" class="checkbox__label"
+                                                    ><span class="checkbox__text">РОСоружие<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c_13" class="checkbox__label"
+                                                    ><span class="checkbox__text">СТИЛЬ-М<small>(170)</small></span></label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Сталь</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_1" class="checkbox__label"
+                                                    ><span class="checkbox__text">100Х13М<small>(250)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_2" class="checkbox__label"
+                                                    ><span class="checkbox__text">110Х18М-ШД<small>(25)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_3" class="checkbox__label"
+                                                    ><span class="checkbox__text">40Х10С2М (ЭИ-107)<small>(265)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_4" class="checkbox__label"
+                                                    ><span class="checkbox__text">50Х14МФ<small>(18)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_5" class="checkbox__label"
+                                                    ><span class="checkbox__text">95Х18<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_6" class="checkbox__label"
+                                                    ><span class="checkbox__text">AUS-8<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_7" class="checkbox__label"
+                                                    ><span class="checkbox__text">ELMAX<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_8" class="checkbox__label"
+                                                    ><span class="checkbox__text">RWL-34<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_9" class="checkbox__label"
+                                                    ><span class="checkbox__text">Дамаск<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_10" class="checkbox__label"
+                                                    ><span class="checkbox__text">К340<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_11" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой булат<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_12" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой булат<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_13" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой булат<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-m_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-m_14" class="checkbox__label"
+                                                    ><span class="checkbox__text">М390<small>(170)</small></span></label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Рукоять</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_1" class="checkbox__label"
+                                                    ><span class="checkbox__text">Mercorne<small>(250)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_2" class="checkbox__label"
+                                                    ><span class="checkbox__text">Бубинго<small>(25)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_3" class="checkbox__label"
+                                                    ><span class="checkbox__text">Граб<small>(265)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_4" class="checkbox__label"
+                                                    ><span class="checkbox__text">Дуб<small>(18)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_5" class="checkbox__label"
+                                                    ><span class="checkbox__text">Кап<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_6" class="checkbox__label"
+                                                    ><span class="checkbox__text">Комбинированная<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_7" class="checkbox__label"
+                                                    ><span class="checkbox__text">Каштан<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_8" class="checkbox__label"
+                                                    ><span class="checkbox__text">Квартопрен<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_9" class="checkbox__label"
+                                                    ><span class="checkbox__text">Кожа-Металл<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-s_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-s_10" class="checkbox__label"
+                                                    ><span class="checkbox__text">Комбинированная<small>(170)</small></span></label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Гарда и тыльник</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_1" class="checkbox__label"
+                                                    ><span class="checkbox__text">Алюминий<small>(250)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_2" class="checkbox__label"
+                                                    ><span class="checkbox__text">Латунь<small>(25)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_3" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой Барс<small>(265)</small></span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_4" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой Барс<small>(18)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_5" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой Пума<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_6" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литой Пума<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_7" class="checkbox__label"
+                                                    ><span class="checkbox__text">Литье<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_8" class="checkbox__label"
+                                                    ><span class="checkbox__text">Металлический<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_9" class="checkbox__label"
+                                                    ><span class="checkbox__text">Нержавеющая сталь<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_10" class="checkbox__label"
+                                                    ><span class="checkbox__text">Текстолит<small>(170)</small></span></label
+                                                >
+                                            </div>
+											<div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-h_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-h_11" class="checkbox__label"
+                                                    ><span class="checkbox__text">Комбинированная<small>(170)</small></span></label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__item item-filter-catalog">
+                                        <button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Золочение</button>
+                                        <div class="item-filter-catalog__body">
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-a_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-a_1" class="checkbox__label"
+                                                    ><span class="checkbox__text">Золочение клинка</span></label
+                                                >
+                                            </div>
+                                            <div class="item-filter-catalog__checkbox checkbox">
+                                                <input id="c-a_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+                                                <label for="c-a_2" class="checkbox__label"
+                                                    ><span class="checkbox__text">Золочение рисунка на клинке</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-catalog__length length-filter">
+                                        <button type="button" data-spoller class="length-filter__title _icon-arrow-up-spoller">Общая длина, мм</button>
+                                        <div class="price-filter__body" data-range>
+                                            <div class="price-filter__inputs">
+                                                <input data-range-from="0" value="100" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                                <input data-range-to="500" value="400" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                            </div>
+                                            <div class="price-filter__range" data-range-item></div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__length length-filter">
+                                        <button type="button" data-spoller class="length-filter__title _icon-arrow-up-spoller">Длина клинка, мм</button>
+                                        <div class="price-filter__body" data-range>
+                                            <div class="price-filter__inputs">
+                                                <input data-range-from="0" value="100" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                                <input data-range-to="500" value="400" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                            </div>
+                                            <div class="price-filter__range" data-range-item></div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__length length-filter">
+                                        <button type="button" data-spoller class="length-filter__title _icon-arrow-up-spoller">Ширина клинка, мм</button>
+                                        <div class="price-filter__body" data-range>
+                                            <div class="price-filter__inputs">
+                                                <input data-range-from="0" value="100" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                                <input data-range-to="500" value="400" autocomplete="off" type="text" name="form[]" class="price-filter__input" />
+                                            </div>
+                                            <div class="price-filter__range" data-range-item></div>
+                                        </div>
+                                    </div>
+									<div class="filter-catalog__raiting item-filter-catalog">
+										<button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-up-spoller">Рейтинг</button>
+										<div class="item-filter-catalog__body">
+											<div class="checkbox">
+												<input id="c-r_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c-r_1" class="checkbox__label">
+													<div class="item-filter-catalog__raiting raiting-item-filter">
+														<div class="raiting-item-filter__body">
+															<span>5/5</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="checkbox">
+												<input id="c-r_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c-r_2" class="checkbox__label">
+													<div class="item-filter-catalog__raiting raiting-item-filter">
+														<div class="raiting-item-filter__body raiting-item-filter__body_4">	<span>4/5</span></div>
+													</div>
+												</label>
+											</div>
+											<div class="checkbox">
+												<input id="c-r_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c-r_3" class="checkbox__label">
+													<div class="item-filter-catalog__raiting raiting-item-filter">
+														<div class="raiting-item-filter__body raiting-item-filter__body_3">	<span>3/5</span></div>
+													</div>
+												</label>
+											</div>
+											<div class="checkbox">
+												<input id="c-r_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c-r_4" class="checkbox__label">
+													<div class="item-filter-catalog__raiting raiting-item-filter">
+														<div class="raiting-item-filter__body raiting-item-filter__body_2">
+															<span>2/5</span>
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="checkbox">
+												<input id="c-r_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c-r_5" class="checkbox__label">
+													<div class="item-filter-catalog__raiting raiting-item-filter">
+														<div class="raiting-item-filter__body raiting-item-filter__body_1">	<span>1/5</span></div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__control">
+                                    <select name="form[]" class="control">
+                                        <option value="1" selected>По популярности</option>
+                                        <option value="2">По популярности</option>
+                                        <option value="3">По популярности</option>
+                                        <option value="4">По популярности</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__products">
+                                    <article class="products-card">
+                                        <div class="products-card__sale">-50%</div>
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                    <article class="products-card">
+                                        <a href="" class="products-card__image">
+                                            <span class="products-card__item-image-ibg products-card__item-image-ibg_contain">
+                                                <img src="@img/product-card//image.jpg" alt="image" />
+                                            </span>
+                                        </a>
+                                        <div class="products-card__body">
+                                            <h4 class="products-card__title">
+                                                <a href="" class="products-card__link-title">Нож Лиса</a>
+                                            </h4>
+                                            <div class="products-card__info info-products-card">
+                                                <div class="info-products-card__size">95х18</div>
+                                                <div class="info-products-card__materials">Орех, Алюминий</div>
+                                            </div>
+                                            <div class="products-card__raiting rating rating_set">
+                                                <div class="rating__body">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" class="rating__item" value="1" name="rating" />
+                                                        <input type="radio" class="rating__item" value="2" name="rating" />
+                                                        <input type="radio" class="rating__item" value="3" name="rating" />
+                                                        <input type="radio" class="rating__item" value="4" name="rating" />
+                                                        <input type="radio" class="rating__item" value="5" name="rating" />
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value">3.6</div>
+                                                <div class="rating__info">12 отзывов</div>
+                                            </div>
+                                            <div class="products-card__footer">
+                                                <div class="products-card__price">2 719 р.</div>
+                                                <a href="" class="products-card__compare _icon-compare"></a>
+                                                <a href="" class="products-card__favorite _icon-favorite"></a>
+                                            </div>
+                                            <button type="button" class="products-card__cart button"><span class="_icon-cart">В корзину</span></button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="catalog__footer">
+                                    <a href="" class="catalog__more button button_border">Показать больше</a>
+                                    <div class="catalog__pagging pagging">
+                                        <button disabled type="button" class="pagging__arrow pagging__arrow_left _icon-arrow-down"></button>
+                                        <ul class="pagging__list">
+                                            <li class="pagging__item"><a href="" class="pagging__link _active">1</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">2</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">3</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">...</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">15</a></li>
+                                        </ul>
+                                        <button type="button" class="pagging__arrow pagging__arrow_right _icon-arrow-down"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+    </body>
+</html>
